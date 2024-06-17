@@ -33,6 +33,9 @@ button {
     line-height: 1;
     font-weight: 600;
     color: #fff;
+    @media (prefers-color-scheme: dark) {
+    color: #000;
+    }
     font-size: var(--baseFontSize);
     font-family: var(--baseFontFamily);
     border-radius: var(--btnRadius);
@@ -115,6 +118,9 @@ button {
     &.btn-outline {
         border: 2px solid currentColor;
         background: #fff;
+        @media (prefers-color-scheme: dark) {
+        background: #000;
+        }
     }
 
     @mixin btnOpacity($base: 1, $hover: 1, $active: 1) {
@@ -371,6 +377,9 @@ button {
             border-radius: 0;
             min-width: 0;
             box-shadow: -1px 0px 0px 0px rgba(#fff, 0.1);
+            @media (prefers-color-scheme: dark) {
+            box-shadow: -1px 0px 0px 0px rgba(#000, 0.1);
+            }
         }
         > *:first-child {
             border-top-left-radius: var(--btnRadius);
@@ -618,6 +627,9 @@ select {
     &.disabled {
         label, %input {
             box-shadow: inset 0 0 0 var(--btnHeight) rgba(#fff, 0.45);
+            @media (prefers-color-scheme: dark) {
+            box-shadow: inset 0 0 0 var(--btnHeight) rgba(#000, 0.45);
+            }
         }
         > label {
             color: var(--txtDisabledColor);
@@ -1244,7 +1256,10 @@ select {
             background: var(--infoAltColor);
         }
         &.cm-focused .cm-matchingBracket {
-            background-color: rgba(50, 140, 130, 0.1);
+            background-color: rgba(50,140,130,0.1);
+            @media (prefers-color-scheme: dark) {
+            background-color: rgba(205,115,125,0.1);
+            }
         }
     }
     .ͼf {
@@ -1274,6 +1289,9 @@ select {
             right: 2px;
             bottom: 2px;
             background: #fff;
+            @media (prefers-color-scheme: dark) {
+            background: #000;
+            }
             border-radius: var(--baseRadius);
         }
     }

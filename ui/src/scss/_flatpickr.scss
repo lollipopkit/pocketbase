@@ -242,13 +242,23 @@
   opacity: 0;
   cursor: pointer;
   border: 1px solid rgba(57,57,57,0.15);
+  @media (prefers-color-scheme: dark) {
+
+  border: 1px solid rgba(198,198,198,0.15);
+  }
   box-sizing: border-box;
 }
 .numInputWrapper span:hover {
   background: rgba(0,0,0,0.1);
+  @media (prefers-color-scheme: dark) {
+  background: rgba(255,255,255,0.1);
+  }
 }
 .numInputWrapper span:active {
   background: rgba(0,0,0,0.2);
+  @media (prefers-color-scheme: dark) {
+  background: rgba(255,255,255,0.2);
+  }
 }
 .numInputWrapper span:after {
   display: block;
@@ -263,6 +273,9 @@
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-bottom: 4px solid rgba(57,57,57,0.6);
+  @media (prefers-color-scheme: dark) {
+  border-bottom: 4px solid rgba(198,198,198,0.6);
+  }
   top: 26%;
 }
 .numInputWrapper span.arrowDown {
@@ -272,6 +285,9 @@
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid rgba(57,57,57,0.6);
+  @media (prefers-color-scheme: dark) {
+  border-top: 4px solid rgba(198,198,198,0.6);
+  }
   top: 40%;
 }
 .numInputWrapper span svg {
@@ -279,7 +295,10 @@
   height: auto;
 }
 .numInputWrapper span svg path {
-  fill: rgba(0,0,0,0.5);
+  fill: rgba(57,57,57,0.5);
+  @media (prefers-color-scheme: dark) {
+  fill: rgba(255,255,255,0.5);
+  }
 }
 .numInputWrapper:hover {
   background: var(--baseAlt1Color);
@@ -516,7 +535,10 @@ span.flatpickr-weekday {
   background: var(--primaryColor);
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #fff;
+          color: #fff;
+          @media (prefers-color-scheme: dark) {
+  color: #000;
+          }
   border-color: var(--primaryColor);
 }
 .flatpickr-day.selected.startRange,

@@ -26,7 +26,7 @@
     }
 </script>
 
-<div class="code-wrapper prism-light {classes}">
+<div class="code-wrapper prism {classes}">
     <code>{@html formattedContent}</code>
 </div>
 
@@ -42,7 +42,7 @@
         display: block;
         width: 100%;
     }
-    .prism-light code {
+    .prism code {
         color: var(--txtPrimaryColor);
         background: var(--baseAlt1Color);
     }

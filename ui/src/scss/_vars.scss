@@ -30,30 +30,59 @@
     --tooltipColor:   rgba(0, 0, 0, 0.85);
     --shadowColor:    rgba(0, 0, 0, 0.06);
 
+    @media (prefers-color-scheme: dark) {
+        --txtPrimaryColor: #e9e9e5;
+        --txtHintColor: #99908a;
+        --txtDisabledColor: #5f5953;
+
+        --primaryColor: #e9e9e5;
+
+        --bodyColor: #070605;
+
+        --baseColor: #000000;
+        --baseAlt1Color: #1b1613;
+        --baseAlt2Color: #28221b;
+        --baseAlt3Color: #393228;
+        --baseAlt4Color: #5a4f3f;
+
+        --infoColor: #ab6617;
+        --infoAltColor: #311d07;
+        --successColor: #cd527b;
+        --successAltColor: #3b1123;
+        --dangerColor: #1cba9d;
+        --dangerAltColor: #08352d;
+        --warningColor: #006bb2;
+        --warningAltColor: #002b47;
+
+        --overlayColor: rgba(202, 184, 151, 0.28);
+        --tooltipColor: rgba(255, 255, 255, 0.85);
+        --shadowColor: rgba(255, 255, 255, 0.06);
+    }
+
     --baseFontSize: 14.5px;
-    --xsFontSize:   12px;
-    --smFontSize:   13px;
-    --lgFontSize:   15px;
-    --xlFontSize:   16px;
+    --xsFontSize: 12px;
+    --smFontSize: 13px;
+    --lgFontSize: 15px;
+    --xlFontSize: 16px;
 
     --baseLineHeight: 22px;
-    --smLineHeight:   16px;
-    --lgLineHeight:   24px;
+    --smLineHeight: 16px;
+    --lgLineHeight: 24px;
 
     --inputHeight: 34px;
 
-    --btnHeight:   40px;
+    --btnHeight: 40px;
     --xsBtnHeight: 22px;
     --smBtnHeight: 30px;
     --lgBtnHeight: 54px;
 
     --baseSpacing: 30px;
-    --xsSpacing:   15px;
-    --smSpacing:   20px;
-    --lgSpacing:   50px;
-    --xlSpacing:   60px;
+    --xsSpacing: 15px;
+    --smSpacing: 20px;
+    --lgSpacing: 50px;
+    --xlSpacing: 60px;
 
-    --wrapperWidth:   850px;
+    --wrapperWidth: 850px;
     --smWrapperWidth: 420px;
     --lgWrapperWidth: 1200px;
 
@@ -65,8 +94,8 @@
     --entranceAnimationSpeed: 250ms;
 
     --baseRadius: 4px;
-    --lgRadius:   12px;
-    --btnRadius:  4px;
+    --lgRadius: 12px;
+    --btnRadius: 4px;
 
     // https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color
     accent-color: var(--primaryColor);
@@ -76,14 +105,14 @@
 // Maps
 // ----
 $colorsMap: (
-    "primary":     var(--primaryColor),
-    "info":        var(--infoColor),
-    "info-alt":    var(--infoAltColor),
-    "success":     var(--successColor),
+    "primary": var(--primaryColor),
+    "info": var(--infoColor),
+    "info-alt": var(--infoAltColor),
+    "success": var(--successColor),
     "success-alt": var(--successAltColor),
-    "danger":      var(--dangerColor),
-    "danger-alt":  var(--dangerAltColor),
-    "warning":     var(--warningColor),
+    "danger": var(--dangerColor),
+    "danger-alt": var(--dangerAltColor),
+    "warning": var(--warningColor),
     "warning-alt": var(--warningAltColor),
 );
 
@@ -95,9 +124,9 @@ $sidesMap: (
 );
 
 $sizesMap: (
-  "base": var(--baseSpacing),
-  "xs":   var(--xsSpacing),
-  "sm":   var(--smSpacing),
-  "lg":   var(--lgSpacing),
-  "xl":   var(--xlSpacing),
+    "base": var(--baseSpacing),
+    "xs": var(--xsSpacing),
+    "sm": var(--smSpacing),
+    "lg": var(--lgSpacing),
+    "xl": var(--xlSpacing),
 );

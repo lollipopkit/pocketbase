@@ -88,6 +88,9 @@
 
 .schema-field-options {
     background: #fff;
+    @media (prefers-color-scheme: dark) {
+    background: #000;
+    }
     padding: var(--xsSpacing);
     border-bottom-left-radius: var(--baseRadius);
     border-bottom-right-radius: var(--baseRadius);

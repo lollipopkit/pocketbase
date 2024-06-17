@@ -137,9 +137,15 @@
     &.scrollable {
         .panel-header {
             box-shadow: 0px 4px 5px 0px rgba(#000, 0.05);
+            @media (prefers-color-scheme: dark) {
+            box-shadow: 0px 4px 5px 0px rgba(#fff, 0.05);
+            }
         }
         .panel-footer {
             box-shadow: 0px -4px 5px 0px rgba(#000, 0.05);
+            @media (prefers-color-scheme: dark) {
+            box-shadow: 0px -4px 5px 0px rgba(#fff, 0.05);
+            }
         }
         &.scroll-top-reached .panel-header {
             box-shadow: none;
